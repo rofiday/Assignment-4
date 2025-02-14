@@ -1,0 +1,684 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "crud-assign-cs",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/customers/": {
+      "get": {
+        "tags": [
+          "Customers"
+        ],
+        "summary": "Get All Customer",
+        "description": "Get All Customer",
+        "operationId": "getAllCustomer",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Customers"
+        ],
+        "summary": "Update Customer",
+        "description": "Update Customer",
+        "operationId": "updateCustomer",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/customers": {
+      "post": {
+        "tags": [
+          "Customers"
+        ],
+        "summary": "Create Customers",
+        "description": "Create Customers",
+        "operationId": "createCustomers",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "rofidailamy@gmail.com"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "rofi"
+                  },
+                  "phoneNumber": {
+                    "type": "string",
+                    "example": "085158491622"
+                  }
+                }
+              },
+              "examples": {
+                "Create Customers": {
+                  "value": {
+                    "email": "rofidailamy@gmail.com",
+                    "name": "rofi",
+                    "phoneNumber": "085158491622"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/customers/b7ee78f7-3a38-40f7-9637-bd8268b22450": {
+      "delete": {
+        "tags": [
+          "Customers"
+        ],
+        "summary": "Delete Customer",
+        "description": "Delete Customer",
+        "operationId": "deleteCustomer",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/roles": {
+      "post": {
+        "tags": [
+          "Roles"
+        ],
+        "summary": "Create Role",
+        "description": "Create Role",
+        "operationId": "createRole",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "roleName": {
+                    "type": "string",
+                    "example": "Manager"
+                  }
+                }
+              },
+              "examples": {
+                "Create Role": {
+                  "value": {
+                    "roleName": "Manager"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/roles/e8376c20-08ab-4b9a-b121-1221cb427b28": {
+      "put": {
+        "tags": [
+          "Roles"
+        ],
+        "summary": "Update Role",
+        "description": "Update Role",
+        "operationId": "updateRole",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/roles/08a2d63e-1c99-417f-a3fe-9426fecf4423": {
+      "delete": {
+        "tags": [
+          "Roles"
+        ],
+        "summary": "Delete Role",
+        "description": "Delete Role",
+        "operationId": "deleteRole",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Create User",
+        "description": "Create User",
+        "operationId": "createUser",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "admins@gmail.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123456"
+                  },
+                  "roleId": {
+                    "type": "string",
+                    "example": "b274e3c1-9813-464a-8a1a-406315409692"
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "adminsupport"
+                  }
+                }
+              },
+              "examples": {
+                "Create User": {
+                  "value": {
+                    "email": "admins@gmail.com",
+                    "password": "123456",
+                    "roleId": "b274e3c1-9813-464a-8a1a-406315409692",
+                    "username": "adminsupport"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/2dd38e88-4718-48bb-8bbe-09329089746c": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Update User By Id",
+        "description": "Update User By Id",
+        "operationId": "updateUserById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "caterine@gmail.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123455 "
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "Caterine41"
+                  }
+                }
+              },
+              "examples": {
+                "Update User By Id": {
+                  "value": {
+                    "email": "caterine@gmail.com",
+                    "password": "123455 ",
+                    "username": "Caterine41"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/2ec3f465-06ba-4075-bf0c-bc5e83648c6d": {
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Delete Users By Id",
+        "description": "Delete Users By Id",
+        "operationId": "deleteUsersById",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/address": {
+      "get": {
+        "tags": [
+          "Addresses"
+        ],
+        "summary": "Get All Address",
+        "description": "Get All Address",
+        "operationId": "getAllAddress",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Addresses"
+        ],
+        "summary": "Create Address",
+        "description": "Create Address",
+        "operationId": "createAddress",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "city": {
+                    "type": "string",
+                    "example": "Conroe"
+                  },
+                  "country": {
+                    "type": "string",
+                    "example": "Indonesia"
+                  },
+                  "customerId": {
+                    "type": "string",
+                    "example": "2ab00272-72e0-4c44-8dee-85fb21f61fcd"
+                  },
+                  "postalCode": {
+                    "type": "string",
+                    "example": "57234"
+                  },
+                  "province": {
+                    "type": "string",
+                    "example": "DK Jakarta"
+                  },
+                  "street": {
+                    "type": "string",
+                    "example": "Edwin Manor"
+                  }
+                }
+              },
+              "examples": {
+                "Create Address": {
+                  "value": {
+                    "city": "Conroe",
+                    "country": "Indonesia",
+                    "customerId": "2ab00272-72e0-4c44-8dee-85fb21f61fcd",
+                    "postalCode": "57234",
+                    "province": "DK Jakarta",
+                    "street": "Edwin Manor"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users-roles": {
+      "post": {
+        "tags": [
+          "Users-Roles"
+        ],
+        "summary": "Create Users Roles",
+        "description": "Create Users Roles",
+        "operationId": "createUsersRoles",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "roleId": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "userId": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "examples": {
+                "Create Users Roles": {
+                  "value": {
+                    "roleId": "",
+                    "userId": ""
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users-roles/1bb94f35-cbb2-4aa5-9ed3-402abc547f00": {
+      "put": {
+        "tags": [
+          "Users-Roles"
+        ],
+        "summary": "Update Users Roles By Id",
+        "description": "Update Users Roles By Id",
+        "operationId": "updateUsersRolesById",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users-roles/": {
+      "delete": {
+        "tags": [
+          "Users-Roles"
+        ],
+        "summary": "Delete Users Roles By Id",
+        "description": "Delete Users Roles By Id",
+        "operationId": "deleteUsersRolesById",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts": {
+      "post": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Create Contacts",
+        "description": "Create Contacts",
+        "operationId": "createContacts",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/0206be96-89f4-4c4b-bdbb-12e62bcf5aba": {
+      "put": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Update Contact By Id",
+        "description": "Update Contact By Id",
+        "operationId": "updateContactById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "contactType": {
+                    "type": "string",
+                    "example": "Instagram"
+                  },
+                  "contactValue": {
+                    "type": "string",
+                    "example": "Marian_Schulist20@instagram.com"
+                  },
+                  "customerId": {
+                    "type": "string",
+                    "example": "7e4ea91a-5295-4301-807f-dabb7820e67a"
+                  }
+                }
+              },
+              "examples": {
+                "Update Contact By Id": {
+                  "value": {
+                    "contactType": "Instagram",
+                    "contactValue": "Marian_Schulist20@instagram.com",
+                    "customerId": "7e4ea91a-5295-4301-807f-dabb7820e67a"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Delete Contact By Id",
+        "description": "Delete Contact By Id",
+        "operationId": "deleteContactById",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logs": {
+      "post": {
+        "tags": [
+          "Logs"
+        ],
+        "summary": "New Request",
+        "description": "New Request",
+        "operationId": "newRequest",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "examples": {
+                "New Request": {
+                  "value": {}
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logs/458c4df9-36a8-4203-98fb-029436a150ea": {
+      "put": {
+        "tags": [
+          "Logs"
+        ],
+        "summary": "New Request",
+        "description": "New Request",
+        "operationId": "newRequest1",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "examples": {
+                "New Request": {
+                  "value": ""
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Register",
+        "description": "Register",
+        "operationId": "register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "s"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "password"
+                  },
+                  "repeatPassword": {
+                    "type": "string",
+                    "example": "password"
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "s"
+                  }
+                }
+              },
+              "examples": {
+                "Register": {
+                  "value": {
+                    "email": "s",
+                    "password": "password",
+                    "repeatPassword": "password",
+                    "username": "s"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Login",
+        "description": "Login",
+        "operationId": "login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "rofi2@gmail.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "124"
+                  }
+                }
+              },
+              "examples": {
+                "Login": {
+                  "value": {
+                    "email": "rofi2@gmail.com",
+                    "password": "124"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Customers"
+    },
+    {
+      "name": "Roles"
+    },
+    {
+      "name": "Users"
+    },
+    {
+      "name": "Addresses"
+    },
+    {
+      "name": "Users-Roles"
+    },
+    {
+      "name": "Contacts"
+    },
+    {
+      "name": "Logs"
+    },
+    {
+      "name": "Auth"
+    }
+  ]
+}
