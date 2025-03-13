@@ -56,11 +56,11 @@ membuat aplikasi pendataan untuk pelanggan yang dimana digunakan untuk Create Re
 # APi Documentation
 
 
+![Image](https://github.com/user-attachments/assets/de2314c7-d7a2-4643-9105-563057c1c8fb)
 
 
 
-
-
+link : http://localhost:3000/api-docs/
 
 # 🔐Environment Variable
 - NODE_ENV=development
