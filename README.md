@@ -63,33 +63,33 @@ membuat aplikasi pendataan untuk pelanggan yang dimana digunakan untuk Create Re
 link : http://localhost:3000/api-docs/
 
 # 🔐Environment Variable
-- NODE_ENV=development
+	- NODE_ENV=you_node_env
 
-- APP_URL = you_app_url
+	- APP_URL = you_app_url
 
-- PORT = you_port
+	- PORT = you_port
 
-- JWT_SECRET=you_jwt_secret
+	- JWT_SECRET=you_jwt_secret
 
-- COOKIE_NAME= you_cookie_name
+	- COOKIE_NAME= you_cookie_name
 
-- BASE_URL=you_base_url
+	- BASE_URL=you_base_url
 
-- POSTMAN_API_URL = you_postman_api_url
+	- POSTMAN_API_URL = you_postman_api_url
 
-- POSTMAN_ACCESS_KEY=you_postman_access_key
+	- POSTMAN_ACCESS_KEY=you_postman_access_key
 
-- SWAGGER_OUTPUT_PATH=.you_swagger_output_path
+	- SWAGGER_OUTPUT_PATH=.you_swagger_output_path
 
   
 
-DB_USERNAME_DEVELOPMENT = you_username_development
+	DB_USERNAME_DEVELOPMENT = you_username_development
 
-DB_PASSWORD_DEVELOPMENT = you_password_development
+	DB_PASSWORD_DEVELOPMENT = you_password_development
 
-DB_DATABASE_DEVELOPMENT = you_database_development
+	DB_DATABASE_DEVELOPMENT = you_database_development
 
-DB_HOST_DEVELOPMENT = you_host_development
+	DB_HOST_DEVELOPMENT = you_host_development
 
-DB_DIALECT_DEVELOPMENT = you_dialect_development
+	DB_DIALECT_DEVELOPMENT = you_dialect_development
 
